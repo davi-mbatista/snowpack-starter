@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types"],
+  "include": ["src"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
@@ -7,7 +7,8 @@
     "forceConsistentCasingInFileNames": true,
     "importsNotUsedAsValues": "error",
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react",
+    "jsxFactory": "h",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,

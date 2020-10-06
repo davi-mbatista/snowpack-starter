@@ -1,13 +1,11 @@
-import * as React from "react";
-import ReactDOM from "react-dom";
+import { h, render } from "preact";
+import "preact/devtools";
 
 import "./styles.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <main>
-      <h1>React + Snowpack</h1>
-    </main>
-  </React.StrictMode>,
-  document.querySelector("#root")
+render(
+  <main>
+    <h1>Preact + Snowpack</h1>
+  </main>,
+  document.querySelector("#root") || document.body
 );
