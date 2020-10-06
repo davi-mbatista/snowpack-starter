@@ -8,7 +8,6 @@
     "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "jsx": "react",
-    "jsxFactory": "h",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,

@@ -18,13 +18,18 @@
     "url": "https://github.com/davi-mbatista/snowpack-starter/issues"
   },
   "dependencies": {
-    "preact": "10.5.4"
+    "preact": "10.5.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@prefresh/snowpack": "2.0.1",
-    "@snowpack/app-scripts-preact": "1.9.3",
+    "@snowpack/app-scripts-react": "1.12.2",
     "@snowpack/plugin-dotenv": "2.0.3",
+    "@snowpack/plugin-react-refresh": "2.3.1",
     "@snowpack/plugin-typescript": "1.0.1",
+    "@types/react": "16.9.51",
+    "@types/react-dom": "16.9.8",
+    "@types/snowpack-env": "2.3.0",
     "snowpack": "2.13.3",
     "typescript": "4.0.3"
   },
@@ -34,17 +39,18 @@
       "src": "/_dist_"
     },
     "plugins": [
-      "@snowpack/plugin-dotenv",
-      "@snowpack/plugin-typescript",
-      "@prefresh/snowpack"
-    ],
-    "install": [
-      "preact"
+      "@snowpack/plugin-react-refresh",
+      "@snowpack/plugin-dotenv"
     ],
     "alias": {
       "react": "preact/compat",
       "react-dom": "preact/compat"
     },
+    "install": [
+      "preact",
+      "react",
+      "react-dom"
+    ],
     "installOptions": {
       "installTypes": true
     }
