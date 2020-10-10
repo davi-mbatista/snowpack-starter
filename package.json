@@ -1,58 +1,69 @@
 {
-  "name": "snowpack-starter",
-  "version": "1.0.0",
-  "description": "Snowpack starter template",
-  "main": "index.js",
-  "scripts": {
-    "prepare": "snowpack",
-    "start": "snowpack dev",
-    "build": "snowpack build --clean"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davi-mbatista/snowpack-starter.git"
-  },
-  "author": "@davi-mbatista",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/davi-mbatista/snowpack-starter/issues"
-  },
-  "dependencies": {
-    "preact": "10.5.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  },
-  "devDependencies": {
-    "@snowpack/app-scripts-react": "1.12.2",
-    "@snowpack/plugin-dotenv": "2.0.3",
-    "@snowpack/plugin-react-refresh": "2.3.1",
-    "@snowpack/plugin-typescript": "1.0.1",
-    "@types/react": "16.9.51",
-    "@types/react-dom": "16.9.8",
-    "@types/snowpack-env": "2.3.0",
-    "snowpack": "2.13.3",
-    "typescript": "4.0.3"
-  },
-  "snowpack": {
-    "mount": {
-      "public": "/",
-      "src": "/_dist_"
+    "name": "snowpack-starter",
+    "version": "1.0.0",
+    "description": "Snowpack starter template",
+    "main": "index.js",
+    "scripts": {
+        "prepare": "snowpack",
+        "start": "snowpack dev",
+        "build": "snowpack build --clean"
     },
-    "plugins": [
-      "@snowpack/plugin-react-refresh",
-      "@snowpack/plugin-dotenv"
-    ],
-    "alias": {
-      "react": "preact/compat",
-      "react-dom": "preact/compat"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/davi-mbatista/snowpack-starter.git"
     },
-    "install": [
-      "preact",
-      "react",
-      "react-dom"
-    ],
-    "installOptions": {
-      "installTypes": true
+    "author": "@davi-mbatista",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/davi-mbatista/snowpack-starter/issues"
+    },
+    "dependencies": {
+        "preact": "10.5.4",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+    },
+    "devDependencies": {
+        "@snowpack/app-scripts-react": "1.12.2",
+        "@snowpack/plugin-dotenv": "2.0.3",
+        "@snowpack/plugin-react-refresh": "2.3.1",
+        "@snowpack/plugin-typescript": "1.0.1",
+        "@types/react": "16.9.51",
+        "@types/react-dom": "16.9.8",
+        "@types/snowpack-env": "2.3.0",
+        "snowpack": "2.13.3",
+        "typescript": "4.0.3"
+    },
+    "snowpack": {
+        "mount": {
+            "public": "/",
+            "src": "/_dist_"
+        },
+        "plugins": [
+            "@snowpack/plugin-react-refresh",
+            "@snowpack/plugin-dotenv"
+        ],
+        "alias": {
+            "react": "preact/compat",
+            "react-dom": "preact/compat"
+        },
+        "install": [
+            "preact",
+            "react",
+            "react-dom"
+        ],
+        "installOptions": {
+            "installTypes": true
+        }
+    },
+    "prettier": {
+        "printWidth": 80,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid"
     }
-  }
 }
