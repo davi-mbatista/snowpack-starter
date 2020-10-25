@@ -1,4 +1,5 @@
 import { h, FunctionalComponent, render } from 'preact';
+import 'preact/devtools';
 
 import './styles.css';
 
