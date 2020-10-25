@@ -1,13 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { h, FunctionalComponent, render } from 'preact';
 
-import "./styles.css";
+import './styles.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <main>
-      <h1>React + Snowpack</h1>
-    </main>
-  </React.StrictMode>,
-  document.querySelector("#root")
-);
+const Main: FunctionalComponent = () => {
+    return (
+        <main>
+            <strong>Snowpack + Typescript + Preact</strong>
+        </main>
+    );
+};
+
+render(<Main />, document.body);
