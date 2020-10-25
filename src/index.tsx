@@ -1,14 +1,7 @@
-import { h, FunctionalComponent, render } from 'preact';
+import { h, render } from 'preact';
 import 'preact/devtools';
 
 import './styles.css';
+import App from './App';
 
-const Main: FunctionalComponent = () => {
-    return (
-        <main>
-            <strong>Snowpack + Typescript + Preact</strong>
-        </main>
-    );
-};
-
-render(<Main />, document.body);
+render(<App />, document.body);
