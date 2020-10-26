@@ -1,13 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { h, render } from 'preact';
+import 'preact/devtools';
 
-import "./styles.css";
+import './styles.css';
+import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <main>
-      <h1>React + Snowpack</h1>
-    </main>
-  </React.StrictMode>,
-  document.querySelector("#root")
-);
+render(<App />, document.body);
