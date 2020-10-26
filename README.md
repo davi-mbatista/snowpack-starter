@@ -1,2 +1,2 @@
-# snowpack-starter
-Snowpack starter template
+# Starter
+A simple modern dev environment using Snowpack, Preact, Typescript, and jest.
