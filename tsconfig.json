@@ -1,22 +1,28 @@
 {
-  "include": ["src", "types"],
-  "exclude": ["node_modules"],
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "./",
-    "forceConsistentCasingInFileNames": true,
-    "importsNotUsedAsValues": "error",
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "jsxFactory": "h",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "paths": { "*": ["web_modules/.types/*"] },
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext",
-    "useDefineForClassFields": true
-  }
+    "include": ["src", "types"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "forceConsistentCasingInFileNames": true,
+        "importsNotUsedAsValues": "error",
+        "isolatedModules": false,
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "paths": { "*": ["web_modules/.types/*"] },
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "esnext",
+        "useDefineForClassFields": true,
+        "types": [
+            "@types/jest",
+            "@types/testing-library__jest-dom",
+            "jest-playwright-preset",
+            "expect-playwright",
+        ]
+    }
 }
