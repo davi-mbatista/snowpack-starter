@@ -7,5 +7,5 @@ beforeAll(() => {
 });
 
 test('App renders', () => {
-    expect(screen.getByText(/app/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/snowpack-icon/gi)).toBeInTheDocument();
 });

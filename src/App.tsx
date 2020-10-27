@@ -4,6 +4,7 @@ const App: FunctionalComponent = () => {
     return (
         <main>
             <svg
+                aria-label="snowpack-icon"
                 height="64px"
                 style="padding-left: 8px;"
                 viewBox="0 0 640 512"
