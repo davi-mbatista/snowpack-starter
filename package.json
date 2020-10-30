@@ -6,13 +6,13 @@
     "scripts": {
         "prepare": "snowpack",
         "start": "snowpack dev",
-        "serve": "npm run build && npx serve ./build &",
+        "serve": "npx serve ./build -l 5000",
         "build": "snowpack build --clean",
         "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
         "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
         "test:e2e": "jest -c jest.e2e.config.js",
         "test:unit": "jest",
-        "test": "npm-run-all serve test:unit test:e2e"
+        "test": "test:unit && test:e2e"
     },
     "repository": {
         "type": "git",
