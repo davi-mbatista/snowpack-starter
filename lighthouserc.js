@@ -1,8 +1,7 @@
 module.exports = {
     ci: {
         collect: {
-            url: ['http://localhost:50000/'],
-            startServerCommand: 'npm run serve'
+            staticDistDir: './build'
         },
         upload: {
             target: 'temporary-public-storage'
