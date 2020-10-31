@@ -25,6 +25,8 @@ jobs:
     lhci:
         name: Lighthouse
         runs-on: macos-latest
+        env:
+            LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         strategy:
             matrix:
                 node-version: ['14.x', 15.x]
