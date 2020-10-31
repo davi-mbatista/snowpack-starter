@@ -1,2 +1,2 @@
 # Starter
-A simple modern dev environment using Snowpack, Preact, Typescript, and jest.
+A simple modern dev environment using Snowpack, Preact, Typescript, Jest, Playwrite, and Lighthouse
