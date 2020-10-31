@@ -1,4 +1,4 @@
-name: Unit & E2E Tests
+name: Test
 
 on:
     push:
@@ -7,7 +7,7 @@ on:
         branches: [main]
 
 jobs:
-    build:
+    Test:
         runs-on: ubuntu-latest
 
         strategy:
