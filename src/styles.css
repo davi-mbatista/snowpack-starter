@@ -24,14 +24,11 @@ main {
     display: grid;
 
     place-items: center;
+    align-content: center;
 
     height: 100vh;
     width: 100vw;
 
     background-color: #141936;
-    color: white;
-}
-
-svg {
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.25);
 }

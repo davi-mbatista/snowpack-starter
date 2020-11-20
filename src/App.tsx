@@ -29,6 +29,7 @@ const App: FunctionalComponent = () => {
                     </g>
                 </g>
             </svg>
+            <h2>Snowpack</h2>
         </main>
     );
 };
