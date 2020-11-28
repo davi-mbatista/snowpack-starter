@@ -10,8 +10,8 @@
         "build": "snowpack build --clean",
         "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
         "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-        "test:e2e": "jest -c jest.e2e.config.js",
-        "test:unit": "jest",
+        "test:e2e": "jest --config jest/jest.e2e.config.js",
+        "test:unit": "jest --config jest/jest.config.js",
         "test": "npm run test:unit && npm run test:e2e"
     },
     "repository": {
