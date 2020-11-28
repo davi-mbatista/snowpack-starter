@@ -10,5 +10,10 @@ module.exports = {
     testMatch: [
         '<rootDir>/src/**/__tests__/**/*.e2e.{js,ts,tsx}',
         '<rootDir>/src/**/*.e2e.{spec,test}.{js,ts,tsx}'
-    ]
+    ],
+    globals: {
+        'ts-jest': {
+            tsconfig: './src/tsconfig.json'
+        }
+    }
 };
