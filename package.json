@@ -3,26 +3,19 @@
     "version": "1.0.0",
     "description": "Snowpack starter template",
     "scripts": {
-        "prepare": "snowpack install",
-        "start": "snowpack dev",
+        "prepare": "snowpack --config config/snowpack.config.js install",
+        "start": "snowpack --config config/snowpack.config.js dev",
         "serve": "npm run build && npx serve ./build -l 5000",
-        "build": "snowpack build --clean",
-        "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-        "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+        "build": "snowpack --config config/snowpack.config.js build --clean",
+        "format": "prettier --config config/prettier.config.js --write \"src/**/*.{js,jsx,ts,tsx}\"",
+        "lint": "prettier --config config/prettier.config.js --check \"src/**/*.{js,jsx,ts,tsx}\"",
         "test:e2e": "jest --config config/jest.e2e.config.js",
         "test:unit": "jest --config config/jest.config.js",
         "test:lighthouse": "lhci autorun --config=config/lighthouse.config.js",
         "test": "npm run test:unit && npm run test:e2e && npm run test:lighthouse"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/davi-mbatista/snowpack-starter.git"
-    },
     "author": "@davi-mbatista",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/davi-mbatista/snowpack-starter/issues"
-    },
     "dependencies": {
         "preact": "10.5.7"
     },
@@ -46,33 +39,5 @@
         "snowpack": "2.17.1",
         "ts-jest": "26.4.4",
         "typescript": "4.1.2"
-    },
-    "snowpack": {
-        "mount": {
-            "public": "/",
-            "src": "/_dist_"
-        },
-        "plugins": [
-            "@snowpack/plugin-dotenv",
-            "@snowpack/plugin-typescript",
-            "@prefresh/snowpack"
-        ],
-        "install": [
-            "preact"
-        ],
-        "installOptions": {
-            "installTypes": true
-        }
-    },
-    "prettier": {
-        "printWidth": 80,
-        "tabWidth": 4,
-        "useTabs": false,
-        "semi": true,
-        "singleQuote": true,
-        "trailingComma": "none",
-        "bracketSpacing": true,
-        "jsxBracketSameLine": false,
-        "arrowParens": "avoid"
     }
 }
