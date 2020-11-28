@@ -2,6 +2,10 @@
 
 A simple and yet modern development environment template
 
+## [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) ![ci workflow badge](https://github.com/davi-mbatista/snowpack-starter/workflows/.github/workflows/ci.yml/badge.svg)
+
+
+
 ### Tooling
 
 -   [Snowpack](https://www.snowpack.dev/)
