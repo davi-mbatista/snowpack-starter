@@ -1,4 +1,4 @@
-process.env.JEST_PLAYWRIGHT_CONFIG = './jest/jest-playwright.config.js';
+process.env.JEST_PLAYWRIGHT_CONFIG = './config/jest.playwright.config.js';
 
 module.exports = {
     verbose: true,

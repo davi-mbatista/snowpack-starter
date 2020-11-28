@@ -2,17 +2,17 @@
     "name": "snowpack-starter",
     "version": "1.0.0",
     "description": "Snowpack starter template",
-    "main": "index.js",
     "scripts": {
         "prepare": "snowpack install",
         "start": "snowpack dev",
-        "serve": "npx serve ./build -l 5000",
+        "serve": "npm run build && npx serve ./build -l 5000",
         "build": "snowpack build --clean",
         "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
         "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-        "test:e2e": "jest --config jest/jest.e2e.config.js",
-        "test:unit": "jest --config jest/jest.config.js",
-        "test": "npm run test:unit && npm run test:e2e"
+        "test:e2e": "jest --config config/jest.e2e.config.js",
+        "test:unit": "jest --config config/jest.config.js",
+        "test:lighthouse": "lhci autorun --config=config/lighthouse.config.js",
+        "test": "npm run test:unit && npm run test:e2e && npm run test:lighthouse"
     },
     "repository": {
         "type": "git",
@@ -27,6 +27,7 @@
         "preact": "10.5.7"
     },
     "devDependencies": {
+        "@lhci/cli": "0.6.1",
         "@prefresh/snowpack": "2.1.0",
         "@snowpack/app-scripts-preact": "1.9.5",
         "@snowpack/plugin-dotenv": "2.0.4",
