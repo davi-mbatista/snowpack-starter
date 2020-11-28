@@ -1,3 +1,7 @@
+<div align="right">
+    <img width="150" title="Snowpack logo" src="https://www.snowpack.dev/assets/snowpack-logo-dark.png">
+</div>
+
 ## Snowpack starter
 
 A simple and yet modern development environment template
