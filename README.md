@@ -2,7 +2,7 @@
 
 ## Snowpack starter
 
-A simple and yet modern (opinionated)development environment template
+A simple and yet modern (opinionated) development environment template
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![CI Actions Status](https://github.com/davi-mbatista/snowpack-starter/workflows/CI/badge.svg)](https://github.com/davi-mbatista/snowpack-starter/actions)
 
