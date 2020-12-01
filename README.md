@@ -2,7 +2,7 @@
 
 ## Snowpack starter
 
-A simple and yet modern development environment template
+A simple and yet modern (opinionated)development environment template
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![CI Actions Status](https://github.com/davi-mbatista/snowpack-starter/workflows/CI/badge.svg)](https://github.com/davi-mbatista/snowpack-starter/actions)
 
@@ -10,7 +10,7 @@ A simple and yet modern development environment template
 ### Tooling
 
 -   [Snowpack](https://www.snowpack.dev/)
--   [Preact](https://preactjs.com/)
+-   [Preact](https://preactjs.com/) (optional, you can't completly ignore it)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [Jest](https://jestjs.io/)
 -   [Playwright](https://playwright.dev/)
@@ -20,7 +20,6 @@ A simple and yet modern development environment template
 -   [GitHub Actions](https://github.com/features/actions)
 
 ### Goals
-
 -   Extended testing capabilities with [Jest](https://jestjs.io/), [Playwright](https://playwright.dev/), and [Testing library](https://testing-library.com/)
 -   [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) integration
 -   Grouped configuration files that keeps the root folder and `package.json` less crowded
