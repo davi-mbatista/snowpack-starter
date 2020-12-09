@@ -1,4 +1,4 @@
-<img align="right" width="150" title="Snowpack logo" src="https://www.snowpack.dev/assets/snowpack-logo-dark.png">
+<img align="right" width="150" title="Snowpack logo" src="https://www.snowpack.dev/img/snowpack-logo-dark.png">
 
 ## Snowpack starter
 
