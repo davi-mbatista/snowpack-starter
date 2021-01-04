@@ -21,7 +21,7 @@
         "url": "git+https://github.com/davi-mbatista/snowpack-starter.git"
     },
     "dependencies": {
-        "preact": "10.5.7"
+        "preact": "10.5.9"
     },
     "devDependencies": {
         "@lhci/cli": "0.6.1",
