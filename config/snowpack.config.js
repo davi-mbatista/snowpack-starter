@@ -1,7 +1,7 @@
 module.exports = {
     mount: {
-        public: '/',
-        src: '/_dist_'
+        '../public': '/',
+        '../src': '/dist'
     },
     plugins: [
         [
@@ -12,8 +12,8 @@ module.exports = {
         ],
         '@prefresh/snowpack'
     ],
-    install: ['preact'],
-    installOptions: {
+    packageOptions: {
+        knownEntrypoints: ['preact'],
         installTypes: true
     }
 };
