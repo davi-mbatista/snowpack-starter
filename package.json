@@ -27,7 +27,7 @@
         "@lhci/cli": "0.6.1",
         "@prefresh/snowpack": "3.0.1",
         "@snowpack/app-scripts-preact": "1.9.5",
-        "@snowpack/plugin-typescript": "1.1.1",
+        "@snowpack/plugin-typescript": "1.2.0",
         "@testing-library/jest-dom": "5.11.9",
         "@testing-library/preact": "2.0.1",
         "@types/jest": "26.0.20",
