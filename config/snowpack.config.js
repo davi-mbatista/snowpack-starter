@@ -1,17 +1,9 @@
 module.exports = {
     mount: {
-        '../public': '/',
+        '../public': { url: '/', static: true },
         '../src': '/dist'
     },
-    plugins: [
-        [
-            '@snowpack/plugin-typescript',
-            {
-                args: '--project src/tsconfig.json'
-            }
-        ],
-        '@prefresh/snowpack'
-    ],
+    plugins: ['@snowpack/plugin-typescript', '@prefresh/snowpack'],
     packageOptions: {
         knownEntrypoints: ['preact'],
         installTypes: true
