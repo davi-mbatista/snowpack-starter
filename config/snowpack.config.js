@@ -3,5 +3,5 @@ module.exports = {
         '../public': { url: '/', static: true },
         '../src': '/dist'
     },
-    plugins: ['@snowpack/plugin-typescript', '@prefresh/snowpack']
+    plugins: ['@prefresh/snowpack', '@snowpack/plugin-typescript']
 };

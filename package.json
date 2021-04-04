@@ -7,7 +7,7 @@
         "format": "npm run prettier --write \"src/**/*.*\"",
         "lint": "npm run prettier --check \"src/**/*.*\"",
         "prepare": "npm run snowpack prepare",
-        "prettier": "prettier --config config/prettier.config.js --ignore-path config/.prettierignore",
+        "prettier": "prettier --config config/prettier.config.js",
         "serve": "npm run build && serve ./build -l 5000",
         "snowpack": "snowpack --config config/snowpack.config.js",
         "start": "npm run snowpack dev",
